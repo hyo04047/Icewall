@@ -1,0 +1,4 @@
+서버주소 : ec2-52-26-115-151.us-west-2.compute.amazonaws.com
+포트 : 44444
+
+flag와 payload를 icewall.executive@gmail.com으로 보내주세요

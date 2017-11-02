@@ -1,0 +1,27 @@
+Dump of assembler code for function main:
+   0x0000000100000f20 <+0>:	push   rbp
+   0x0000000100000f21 <+1>:	mov    rbp,rsp
+   0x0000000100000f24 <+4>:	sub    rsp,0x10
+   0x0000000100000f28 <+8>:	mov    DWORD PTR [rbp-0x4],0x0
+   0x0000000100000f2f <+15>:	mov    DWORD PTR [rbp-0x8],0x0
+   0x0000000100000f36 <+22>:	mov    DWORD PTR [rbp-0xc],0x1
+   0x0000000100000f3d <+29>:	cmp    DWORD PTR [rbp-0xc],0xa
+   0x0000000100000f41 <+33>:	jge    0x100000f5e <main+62>
+   0x0000000100000f47 <+39>:	mov    eax,DWORD PTR [rbp-0xc]
+   0x0000000100000f4a <+42>:	add    eax,DWORD PTR [rbp-0x8]
+   0x0000000100000f4d <+45>:	mov    DWORD PTR [rbp-0x8],eax
+   0x0000000100000f50 <+48>:	mov    eax,DWORD PTR [rbp-0xc]
+   0x0000000100000f53 <+51>:	add    eax,0x1
+   0x0000000100000f56 <+54>:	mov    DWORD PTR [rbp-0xc],eax
+   0x0000000100000f59 <+57>:	jmp    0x100000f3d <main+29>
+   0x0000000100000f5e <+62>:	lea    rdi,[rip+0x39]        # 0x100000f9e
+   0x0000000100000f65 <+69>:	mov    esi,DWORD PTR [rbp-0x8]
+   0x0000000100000f68 <+72>:	mov    al,0x0
+   0x0000000100000f6a <+74>:	call   0x100000f7c
+   0x0000000100000f6f <+79>:	xor    esi,esi
+   0x0000000100000f71 <+81>:	mov    DWORD PTR [rbp-0x10],eax
+   0x0000000100000f74 <+84>:	mov    eax,esi
+   0x0000000100000f76 <+86>:	add    rsp,0x10
+   0x0000000100000f7a <+90>:	pop    rbp
+   0x0000000100000f7b <+91>:	ret    
+End of assembler dump.

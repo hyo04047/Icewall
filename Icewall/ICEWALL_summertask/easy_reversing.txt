@@ -1,0 +1,19 @@
+0x00000000004004e6 <+0>:    push   rbp
+0x00000000004004e7 <+1>:    mov    rbp,rsp
+0x00000000004004ea <+4>:    sub    rsp,0x10
+0x00000000004004ee <+8>:    mov    DWORD PTR [rbp-0x4],0x0
+0x00000000004004f5 <+15>:    mov    DWORD PTR [rbp-0x8],0x0
+0x00000000004004fc <+22>:    jmp    0x400508 <main+34>
+0x00000000004004fe <+24>:    mov    eax,DWORD PTR [rbp-0x8]
+0x0000000000400501 <+27>:    add    DWORD PTR [rbp-0x4],eax
+0x0000000000400504 <+30>:    add    DWORD PTR [rbp-0x8],0x1
+0x0000000000400508 <+34>:    cmp    DWORD PTR [rbp-0x8],0x9
+0x000000000040050c <+38>:    jle    0x4004fe <main+24>
+0x000000000040050e <+40>:    mov    eax,DWORD PTR [rbp-0x4]
+0x0000000000400511 <+43>:    mov    esi,eax
+0x0000000000400513 <+45>:    mov    edi,0x4005b4
+0x0000000000400518 <+50>:    mov    eax,0x0
+0x000000000040051d <+55>:    call   0x4003c0 <printf@plt>
+0x0000000000400522 <+60>:    mov    eax,0x0
+0x0000000000400527 <+65>:    leave  
+0x0000000000400528 <+66>:    ret    

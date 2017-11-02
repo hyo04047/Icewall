@@ -1,0 +1,28 @@
+0. Hex Fiend를 다운받아서 맨 마지막부분을 본다.
+
+1. openstego-0.7.1을 받아서 암호를 추출한다.
+
+2. 알집으로 연다.
+
+3. 아래 코드를 짜서 파이썬으로 돌린다.
+  이미지 파일을 연 후 픽셀을 하나씩 따라가면서 r이 홀수고 g,b가 짝수인 픽셀만 찾아서
+  그 픽셀들의 색을 하나로 바꾼뒤 이미지를 추출한다.
+
+from PIL import Image
+
+img = Image.open("quest3.png")
+result = []
+
+for x in range(img.width):
+	for y in range(img.height):
+		(r,g,b) = img.getpixel((x,y))
+		if (r%2==1 and g%2==0 and b%2==0):
+			result.append((x,y))
+
+for (x,y) in result:
+	img.putpixel((x,y), (255, 255, 255, 0))
+
+img.save("result.png")
+img.close()
+
+4. 그럼 congraturations이 적힌 이미지파일이 나오고 끝!!

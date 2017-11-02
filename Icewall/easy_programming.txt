@@ -1,0 +1,11 @@
+void welcome() {
+	char name[100];
+	printf("enter you name : ");
+	scanf("%100s", name);
+	printf("Hello %s\n", name);
+}
+
+이 함수에서 100칸짜리 char 배열을 만들었는데
+scanf로 100s를 받아오는경우 길이가 100인 입력이 들어오게되면
+마지막에 '\0' 이 들어갈 자리가 없어지기 때문에
+문제가 생길 수 있다.

@@ -1,0 +1,23 @@
+<!doctype html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+<title>해킹하기 좋은 허술한 사이트</title> 
+
+<body>
+<div class=page>
+	<div class=metanav>
+		<a href="{{ url_for('urlshortener') }}">URL 줄이기</a> * 
+		<a href="{{ url_for('entries_list') }}">게시글 목록 보기 </a> *
+		<a href="{{ url_for('write_entry') }}">글쓰기 </a> *
+	{% if not session.logged_in %}
+		<a href="{{ url_for('login') }}">log in</a> *
+		<a href="{{ url_for('register') }}"> Register </a>
+	{% else %}
+		<a href="{{ url_for('logout') }}">log out</a>
+	{% endif %}
+	</div>
+	<h1>에러 Error</h1>
+		{% if msg %} {{ msg | safe}} {% endif %}
+</body>
+
+</html>
